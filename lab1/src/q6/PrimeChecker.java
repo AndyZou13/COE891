@@ -1,7 +1,7 @@
 package q6;
 
 public class PrimeChecker {
-	public static boolean PrimeNumberChecker (int n) {
+	public boolean PrimeNumberChecker (int n) {
 		if (n <= 1) {
 			return false;
 		}

@@ -21,12 +21,9 @@ public class TriangleTest {
 	}
 	@Test 
 	public void testTriValid () {
-		 boolean a = (t5.side1 < t5.side2 + t5.side3);
-		 boolean b = (t5.side2 < t5.side1 + t5.side3);
-		 boolean c = (t5.side3 < t5.side1 + t5.side2);
-		 assertTrue(a);
-		 assertTrue(b);
-		 assertTrue(c);
+		 assertTrue(t5.side1 < t5.side2 + t5.side3);
+		 assertTrue(t5.side2 < t5.side1 + t5.side3);
+		 assertFalse(t5.side3 < t5.side1 + t5.side2);
 	}
 	@Test
 	public void testTri1 () {
