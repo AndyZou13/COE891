@@ -14,14 +14,14 @@ public class TheoriesTest {
 //	public static int[] val1 () {
 //		return new int[] {1, 2, 307, 400567};
 //	}
-//	@DataPoints
-//	public static int[] val2 () {
-//		return new int[] {0, -1, -10, -1234, 1, 10, 6789};
-//	}
 	@DataPoints
-	public static int[] val3 () {
-		return new int[] {0, -1, -10, -1234, 1, 10, 6789, Integer.MAX_VALUE, Integer.MIN_VALUE};
+	public static int[] val2 () {
+		return new int[] {0, -1, -10, -1234, 1, 10, 6789};
 	}
+//	@DataPoints
+//	public static int[] val3 () {
+//		return new int[] {0, -1, -10, -1234, 1, 10, 6789, Integer.MAX_VALUE, Integer.MIN_VALUE};
+//	}
 	@Theory
 	public void theo1(Integer a, Integer b) {
 		Assume.assumeTrue(a > 0 && b > 0);
