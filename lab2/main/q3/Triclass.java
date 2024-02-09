@@ -4,12 +4,14 @@ public class Triclass {
 
 	public static String classify (int x, int y, int z) {
 		
-		if (x + y < z || x + z < y || y + z < x)
-			if (x + z < y)
-				if (y + z < x)
-					return "Invalid";
+		boolean rule1 = x + y > z;
+		boolean rule2 = y + z > x;
+		boolean rule3 = z + x > y;
+		if (rule1 == false || rule2 == false || rule3 == false) {
+			return "Invalid";
+		}
 		if (x == y && y == z) {
-			return "Equliateral";
+			return "Equilateral";
 		} else if ((x == y && y != z && x != z) || (y == z && z != x && x != y) || (z == x && x != y && y != z)){
 			return "Isosceles";
 		} else if (x != y && y != z && x != z) {
