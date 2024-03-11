@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="p2.Test1">
+      <class name="p7.q7">
         <methods>
-          <include name="verifyTitle"/>
-          <include name="launchChrome"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- p2.Test1 -->
+      </class> <!-- p7.q7 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
