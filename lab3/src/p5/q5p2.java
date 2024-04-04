@@ -36,9 +36,6 @@ public class q5p2 {
 		Thread.sleep(1000);
 		WebElement btn = driver.findElement(By.name("btnK"));
 		btn.click();
-		WebElement search = driver.findElement(By.xpath("//a[@href='https://www.facebook.com/']"));
-		search.click();
-		Thread.sleep(1000);
 	}
 	@Test
 	public void FacebookPageTitleVerification() throws InterruptedException {
